@@ -1,0 +1,7 @@
+services:
+  app:
+    build: .
+    ports:
+      - "${APP_PORT:-3000}:3000"
+    environment:
+      APP_GREETING: "${APP_GREETING:-Hello from Docker!}"
